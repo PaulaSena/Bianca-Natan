@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-image: url('src/img/Backgroud-1.png');
+  background-repeat: no-repeat;
+  /* font-size: 1.4rem;*/
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  /* Ajusta a base da fonte de acordo com a largura da viewport */
+
+  font-family: 'Belleza', sans-serif;
+  color: #56555b;
+}
+
+
+body {
+  /*background-position-y: url('/src/img/.png');*/
+  height: 90%;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  /* Tamanho da fonte será baseado no valor calculado no <html> */
+  background-image: url('/src/img/Backgroud-1.png'); /* Caminho para a imagem */
+            background-size: cover; /* Faz a imagem cobrir todo o fundo */
+            background-repeat: no-repeat; /* Impede que a imagem se repita */
+            background-position: center; /* Centraliza a imagem */
+            margin: 0; /* Remove a margem padrão */
+
+}
+
+body .fundo {
+  background-image:("");
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.navbar.row.col-12 {
+  padding: 0;
+}
+
+
+.navbar {
+  background-color: #afd0f555;
+  overflow: hidden;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+img.iconNb {
+  width: 100px;
+  border: none;
+  padding: 0px;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: rgb(41, 100, 172);
+  text-align: center;
+  padding: 1%;
+  font-family: cursive;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #edd1d1;
+}
+
+.navbar.row.col-12 {
+  padding: 0;
+  width: 100%;
+  height:auto;
+}
+
+img.floral.col-2 {
+  padding: 0;
+}
+
+.row .col-12 .flot{
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+img.floralname {
+  padding: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+img.floral.col-1 {
+  padding: 0;
+}
+
+[class*="col-"] {
+  float: 0;
+  padding: 0x;
+}
+
+.row.col-12 {
+  padding: 0;
+   width: 20%; 
+  display: contents;
+  align-content: space-between;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header {
+  color: #ffffff;
+}
+
+.frameMeli {
+  height:auto;
+  width:100%;
+  position:left;
+  overflow:auto;
+  /*border: 2px solid #47557c;*/
+  position: relative;
+  
+  
+}
+div.divisoria {
+  height: 12%;
+}
+
+.fixada {
+  position: absolute;
+  top: 0;
+
+  left: 0px;
+  width: 100%;
+  height: 150px;
+  background-color: #fcfcfc;
+}
+
+.fixadaFundo {
+  height: 0;
+  background-color: rgb(252, 252, 252);
+  top: 300px;
+  width: 100%;
+  padding-top: 0;
+  bottom: 0px;
+}
+
+ .flormeio{
+  width: 80%;
+  padding: 10%;
+  margin: 0;
+  border: 0;
+  padding-top: -10%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+.nomes {
+  width: 100%;
+
+  padding-left: 17%;
+  padding-right: 17%;
+
+  border: 0;
+  margin: 0;
+}
+
+.floral {
+  width: 50%;
+  border: 0;
+  margin: 0;
+  padding-top: 0;
+}
+
+.florCentro {
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 1.0rem;
+  border: 0;
+  margin: 0;
+}
+
+h1 {
+  font: 'Amsterdam One', cursive;
+  color: #be4e6b;
+  /* Cor da fonte h1 */
+}
+
+h2,
+p {
+  font: 'Belleza', sans-serif;
+  color: #838c8a;
+  /* Cor do texto */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.full-screen {
+  margin-top: 0rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+}
+
+#timer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 600rem;
+}
+
+#timer div {
+  text-align: center;
+}
+
+#timer span {
+  font-size: 0, 4rem;
+  display: block;
+}
+
+.fraseConvidados {
+  width: 100%;
+
+  padding-left: 17%;
+  padding-right: 17%;
+}
+
+.dataCasamento {
+  width: 100%;
+  padding-top: 0.5rem;
+
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.col-12.menu {
+  padding-left: 3%;
+  padding-right: 1%;
+}
+
+.enderecoCasamento {
+  padding-top: 0.5rem;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-bottom: 1.0rem;
+}
+
+/*cELULAR*/
+
+  .menus.col-12 {
+    width: 100%;
+    align-content: space-between;
+    border: 5%;
+    /* padding-left: 12%; */
+    display: inline-flex;
+    padding-bottom: 18%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    column-gap: 18%;
+}
+
+
+.maps {
+  width: 100%;
+  height: auto;
+
+  padding-top: 1.5rem;
+
+  border: 0;
+  margin: 0;
+}
+.maps frame{
+  /* Customizar a barra de rolagem para navegadores modernos */
+::-webkit-scrollbar {
+    width: 12px;  /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #EBEBEB;  /* Cor do trilho */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #C0C0C0; /* Cor da parte rolável */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid #EBEBEB; /* Cor do contorno do botão */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A9A9A9; /* Cor quando o botão é hover */
+}
+
+::-webkit-scrollbar-button {
+    background-color: rgb(231, 146, 236); /* Cor das setas */
+}
+
+/* Cor do botão */
+button {
+    background-color: #C0C0C0;
+    color: white;
+    padding: 10px 20px; /* Tamanho do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A9A9A9; /* Cor quando o botão é hover */
+}
+
+}
+.asideform {
+  padding: 13px;
+  color: #be4e6b;
+  border: none;
+  /* text-align: center;*/
+  height: auto;
+}
+
+.asideformradio,
+textarea {
+  padding: 10px;
+  color: #be4e6b;
+  border: none;
+  /* text-align: center;*/
+  height: auto;
+  background-color: aliceblue;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 3px;
+  border-radius: 15px;
+
+}
+
+.wedding-Form form label,
+input {
+  color: #be4e6b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 15px;
+
+}
+
+
+form label input,
+radio {
+  color: #be4e6b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: rgb(235, 241, 247);
+  padding: 10px;
+  margin: #be4e6b;
+  border: #be4e6b;
+  padding-bottom: 10px;
+  border-radius: 15px;
+
+}
+
+button {
+  padding-top: 20%;
+  padding: 10px;
+  color: #fcfcfc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #be4e6b;
+  border: none;
+}
+
+h3 {
+  margin: 10px;
+  margin-left: 0;
+}
+
+
+.frasePresentes {
+  width: 100%;
+  padding-top: 0.5rem;
+
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.pixcode {
+  width: 100%;
+  padding-top: 1.5rem;
+
+  padding-left: 28%;
+  padding-right: 28%;
+}
+
+
+.footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}

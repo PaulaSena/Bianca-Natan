@@ -1,0 +1,83 @@
+.frameMeli {
+  height: 700px !important;
+  width: 100%;
+  position: left;
+  overflow: auto;
+  border: 1px solid #f86aec00;
+  position: relative;
+
+}
+
+div.divisoria {
+  height: 12%;
+}
+
+.fixada {
+  position: absolute;
+  top: 0;
+
+  left: 0px;
+  width: 100%;
+  height: 150px;
+  background-color: #fcfcfc;
+}
+
+
+.fixada.col-4 {
+  padding-right: 0;
+}
+
+.fixada.col-4 {
+  padding-left: 0;
+}
+
+.fixadaFundo {
+  height: 450px;
+  background-color: #fcfcfc;
+  top: 300px;
+  width: 100%;
+  padding-top: 450px;
+  bottom: 0;
+
+
+}
+
+.flormeiomenor {
+  /* padding: 50px; */
+  /* padding-left: 180px; */
+  padding-right: 0;
+  float: right;
+  margin: 0;
+  border: 0;
+  padding-top: -10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 30%;
+}
+
+.flor5MeioDir {
+  /* padding: 50px; */
+  /* padding-left: 180px; */
+  padding-right: 0;
+  float: right;
+  margin: 0;
+  border: 0;
+  padding-top: -10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 60%;
+}
+
+
+.flor5MeioEsq {
+  /* padding: 50px; */
+  /* padding-left: 180px; */
+  padding-right: 0;
+  float: left;
+  margin: 0;
+  border: 0;
+  padding-top: -10%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 60%;
+}
