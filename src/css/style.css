@@ -51,7 +51,7 @@ body .fundo {
 
 
 .navbar {
-  background-color: #afd0f555;
+  background: linear-gradient(to right, rgba(235, 188, 167, 0.624), rgba(207, 199, 248, 0.742));
   overflow: hidden;
   padding: 10px;
   border: 0;
@@ -62,9 +62,9 @@ body .fundo {
 }
 
 img.iconNb {
-  width: 100px;
+  width: 125px;
   border: none;
-  padding: 0px;
+  padding: 2px;
 }
 
 .navbar a {
@@ -99,11 +99,7 @@ img.floral.col-2 {
 }
 
 
-img.floralname {
-  padding: 80px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
+
 
 img.floral.col-1 {
   padding: 0;
@@ -197,8 +193,8 @@ div.divisoria {
 
 .florCentro {
   width: 100%;
-  padding-left: 30%;
-  padding-right: 30%;
+  /* padding-left: 30%; */
+  /* padding-right: 30%; */
   padding-bottom: 1.0rem;
   border: 0;
   margin: 0;

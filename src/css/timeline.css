@@ -7,8 +7,15 @@
 
 /*timeline*/
 .containertimeline {
-    background: linear-gradient(to right, rgba(235, 188, 167, 0.624), rgba(207, 199, 248, 0.742));*
-  }
+  /*  background: linear-gradient(to right, rgba(235, 188, 167, 0.624), rgba(207, 199, 248, 0.742));*/
+padding: 8%;  
+}
+img.floralname {
+  padding: 8%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
   
   
   

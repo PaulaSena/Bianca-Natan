@@ -15,3 +15,8 @@ float: left;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
 }
+
+.video{
+    background: linear-gradient(to right, rgba(235, 188, 167, 0.624), rgba(207, 199, 248, 0.742));
+padding: 10%;
+}
