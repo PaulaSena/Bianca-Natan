@@ -26,7 +26,7 @@ body {
   padding: 0;
   font-size: 1rem;
   /* Tamanho da fonte será baseado no valor calculado no <html> */
-  background-image: url('/src/img/Backgroud-1.png'); /* Caminho para a imagem */
+  background-image: url('src/img/Backgroud-1.png'); /* Caminho para a imagem */
             background-size: cover; /* Faz a imagem cobrir todo o fundo */
             background-repeat: no-repeat; /* Impede que a imagem se repita */
             background-position: center; /* Centraliza a imagem */
@@ -409,8 +409,8 @@ h3 {
   width: 100%;
   padding-top: 1.5rem;
 
-  padding-left: 28%;
-  padding-right: 28%;
+  padding-left: 35%;
+  padding-right: 35%;
 }
 
 
