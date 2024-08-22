@@ -1,594 +1,531 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <link rel="icon" href="caminho/para/seu-icone.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/icone.PNG" type="image/x-icon">
+    <title> Convite de Casamento | B&N</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/sobre.css">
+
+    <link rel="stylesheet" href="/src/css/responsividade.css">
+    <link rel="stylesheet" href="/src/css/music.css">
+    <link rel="stylesheet" href="/src/css/form.css">
+    <link rel="stylesheet" href="/css/fontes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/src/css/divisoria.css">
+    <link rel="stylesheet" href="/src/css/timeline.css">
+    <link rel="stylesheet" href="/src/css/responsividade.css">
+    <link rel="stylesheet" href="/src/css/efeitos.css">
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Allura&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Indie+Flower&family=Lobster&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <title> Convite de Casamento | B&N</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * {
-            box-sizing: border-box;
+        audio#audio-player\ autoplay {
+            height: 25px;
         }
 
-        html {
-            background-image: url('src/img/Backgroud-1.png');
-            background-repeat: no-repeat;
-            /* font-size: 1.4rem;*/
-            font-size: calc(1vw + 1vh + 0.5vmin);
-            /* Ajusta a base da fonte de acordo com a largura da viewport */
-
-            font-family: 'Belleza', sans-serif;
-            color: #56555b;
-            /* Cor geral do texto */
-        }
-        body {
-            height: 90%;
-            width: 100%;
-            border: 0;
-            margin: 0;
+        .col-6.leftflor5MeioEsq {
             padding: 0;
-            font-size: 1rem;
-            /* Tamanho da fonte será baseado no valor calculado no <html> */
-
-
-        }
-        body .fundo {
-            background-image: image();
-            width: 100%;
-            height: 100%;
-        }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
-        .header {
-            color: #ffffff;
-        }
-        /*controle musica*/
-        #music-controls {
-            margin-top: 20px;
         }
 
-        div.divisoria {
-            height: 20%;
-        }
-        .nomes {
-            width: 100%;
-
-            padding-left: 17%;
-            padding-right: 17%;
-
-            border: 0;
-            margin: 0;
-        }
-        .floral {
-            width: 100%;
-            border: 0;
-            margin: 0;
-        }
-        .florCentro {
-            width: 100%;
-            padding-left: 30%;
-            padding-right: 30%;
-            padding-bottom: 1.0rem;
-            border: 0;
-            margin: 0;
-        }
-        h1 {
-            font: 'Amsterdam One', cursive;
-            color: #be4e6b;
-            /* Cor da fonte h1 */
-        }
-        h2,
-        p {
-            font: 'Belleza', sans-serif;
-            color: #838c8a;
-            /* Cor do texto */
-        }
-        section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-
-        }
-        .full-screen {
-            margin-top: 0rem;
-            width: 100%;
-            margin-bottom: 1.5rem;
-
-        }
-        #timer {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-            max-width: 600rem;
-        }
-        #timer div {
-            text-align: center;
-        }
-        #timer span {
-            font-size: 0, 4rem;
-            display: block;
-        }
-        .fraseConvidados {
-            width: 100%;
-
-            padding-left: 17%;
-            padding-right: 17%;
-        }
-        .dataCasamento {
-            width: 100%;
-            padding-top: 0.5rem;
-
-            padding-left: 8%;
-            padding-right: 8%;
-        }
-        .col-12.menu {
-            padding-left: 3%;
-            padding-right: 1%;
-        }
-        .enderecoCasamento {
-            padding-top: 0.5rem;
-            padding-left: 17%;
-            padding-right: 17%;
-            padding-bottom: 1.0rem;
-        }
-        /*cELULAR*/
-        .menus.col-12 {
-            width: 100%;
-            align-content: space-between;
-            border: 5%;
-            padding-left: 12%;
-            display: inline-flex;
-            padding-bottom: 18%;
-            padding-top: 0;
-            padding-bottom: 0;
-
-        }
-        .maps {
-            width: 100%;
-            height: auto;
-
-            padding-top: 1.5rem;
-
-            border: 0;
-            margin: 0;
-        }
-
-        .asideform {
-            padding: 13px;
-            color: #be4e6b;
-            border: none;
-            /* text-align: center;*/
-            height: auto;
-        }
-        .asideformradio,
-        textarea {
-            padding: 10px;
-            color: #be4e6b;
-            border: none;
-            /* text-align: center;*/
-            height: auto;
-            background-color: aliceblue;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            margin: 3px;
-            border-radius: 15px;
-
-        }
-        .wedding-Form form label,
-        input {
-            color: #be4e6b;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            background-color: aliceblue;
-            padding: 5px;
-            border-radius: 15px;
-
-        }
-        form label input,
-        radio {
-            color: #be4e6b;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            background-color: rgb(235, 241, 247);
-            padding: 10px;
-            margin: #be4e6b;
-            border: #be4e6b;
-            padding-bottom: 10px;
-            border-radius: 15px;
-
-        }
-
-        button {
-            padding-top: 20%;
-            padding: 10px;
-            color: #fcfcfc;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            background-color: #be4e6b;
-            border: none;
-        }
-
-        h3 {
-            margin: 10px;
-            margin-left: 0;
-        }
-
-        .footer {
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-            padding: 15px;
-        }
-
-        /* For mobile phones: */
-        [class*="col-"] {
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 600px) {
-
-            /* For tablets: */
-            .col-s-1 {
-                width: 8.33%;
-            }
-
-            .col-s-2 {
-                width: 16.66%;
-            }
-
-            .col-s-3 {
-                width: 25%;
-            }
-
-            .col-s-4 {
-                width: 33.33%;
-            }
-
-            .col-s-5 {
-                width: 41.66%;
-            }
-
-            .col-s-6 {
-                width: 50%;
-            }
-
-            .col-s-7 {
-                width: 58.33%;
-            }
-
-            .col-s-8 {
-                width: 66.66%;
-            }
-
-            .col-s-9 {
-                width: 75%;
-            }
-
-            .col-s-10 {
-                width: 83.33%;
-            }
-
-            .col-s-11 {
-                width: 91.66%;
-            }
-
-            .col-s-12 {
-                width: 100%;
-            }
-
-            .menus.col-12 {
-                width: 100%;
-                align-content: space-between;
-                border: 10%;
-                /* margin: 1%; */
-            }
-
-            .menus {
-                padding-left: 22%;
-                padding-right: 17%;
-            }
-
-            div.menu .col-4 {
-                margin-left: 52%;
-            }
-
-            /*
-            .menus.col-12 {
-                width: 100%;
-                align-content: space-between;
-                border: 10%;
-                padding-left: 24%;
-                display: inline-flex;
-                padding-bottom: 18%;
-
-            }
-*/
-        }
-
-        @media only screen and (min-width: 768px) {
-
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-
-            .col-2 {
-                width: 16.66%;
-            }
-
-            .col-3 {
-                width: 25%;
-            }
-
-            .col-4 {
-                width: 33.33%;
-            }
-
-            .col-5 {
-                width: 41.66%;
-            }
-
-            .col-6 {
-                width: 50%;
-            }
-
-            .col-7 {
-                width: 58.33%;
-            }
-
-            .col-8 {
-                width: 66.66%;
-            }
-
-            .col-9 {
-                width: 75%;
-            }
-
-            .col-10 {
-                width: 83.33%;
-            }
-
-            .col-11 {
-                width: 91.66%;
-            }
-
-            .col-12 {
-                width: 100%;
-            }
-
-            /*
-            .menus.col-12 {
-                width: 100%;
-                align-content: space-between;
-                border: 10%;
-                padding-left: 24%;
-                display: inline-flex;
-                padding-bottom: 18%;
-
-            }*/
-
-            /*TABLET E ´PC*/
-            .menus.col-12 {
-                width: 100%;
-                align-content: space-between;
-                border: 5%;
-                padding-left: 22%;
-                display: inline-flex;
-                padding-bottom: 18%;
-
-            }
-
-            .img {
-                padding: 5%;
-
-                padding-left: 20%;
-                padding-right: 20%;
-            }
-
-            form#weddingForm {
-                padding: 20%;
-                padding-top: 5%;
-            }
-
-            button {
-                padding-top: 20%;
-                padding: 10px;
-            }
-
-        }
+        .rigthflor5MeioDir {}
     </style>
-
 </head>
 
 <body>
-    <img class="floral" src="src/img/floral3.png" alt="">
-    <div class="home col-12">
+    <div class="navbar row col-12 ">
 
-       <!--Controles de áudio -->
-        <div id="music-controls">
-           <!-- <button id="play-button">Play</button>-->
-           <button id="pause-button">ok</button>
-            <div id="animated_div">
- 
-                <i class="som animated_div"><img class="som" src="/src/img/cd_music_love_song.svg" width="30px">
-                    <div id="music-controls">
-                        <!-- <button id="play-button">Play</button>-->
-                        <audio controls id="audio-player" autoplay>
-                            <!-- Adicione as músicas aqui -->
-                            <source src="/src/media/1.mp3" type="audio/mpeg">
-                            <source src="/src/media/2.mp3" type="audio/mpeg">
-                            <source src="/src/media/3.mp3" type="audio/mpeg">
-                            Seu navegador não suporta o elemento de áudio.
-                        </audio>
+        <div class="navbar">
+            <img class="iconNb" src="/src/img/icone.PNG" alt="bn">
+            <a href="#about">Sobre</a>
+            <a href="#presente">Lista de Presentes</a>
+            <a href="#contact">Contato</a>
 
+        </div>
+    </div>
+    <div class="row">
 
-                       
-                    </div> <!--Controles de áudio -->
-                </i></button>
+        <div id="animated_div" id="music-controls">
+            <!-- <i class="animated_div"><img class="som" src="/src/img/cd_music_love_song.svg" width="30px"></i> <button id="play-button">Play</button>-->
+            <audio controls id="audio-player autoplay">
+                <!-- Adicione as músicas aqui -->
+                <source src="/src/media/2.mp3" type="audio/mpeg">
+                <source src="/src/media/1.mp3" type="audio/mpeg">
+                <source src="/src/media/3.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
 
         </div>
 
-        <img class="nomes" src="src/img/nomesTrasparente.PNG" width="80%" alt="">
+        <!-- SOM -->
+    </div>
+    </div> <!--Controles de áudio -->
+
+    <div class="row col-12">
+        <div class="col-6 leftflor5MeioEsq">
+            <img class="zoom-img" src="src/img/flor5MeioEsq.png" alt="Flor Esquerda">
+        </div>
+        <!--  <div class="col-4 meio">
+            <img class="zoom-img" src="src/img/flor5Meio.png" alt="Flor Meio">
+        </div>
+        <div class="col-4 right">
+            <img class="zoom-img" src="src/img/flor5MeioDir.png" alt="Flor Direita">
+        </div>-->
+    </div>
 
 
-        <img class="florCentro" src="src/img/floresmeio2.png" width="50%" alt="">
-        <!-- divisoria --------------------------------------------------------------------
-        fraseConvidados, dataCasamento,enderecoCasamento
-        -->
 
-        <!-- TEMPO-->
-        <section id="countdown" class="full-screen" width="100%">
-            <h3>Contagem Regressiva para o Casamento</h3> <br>
-            <div class="col tempo " id="timer" width="100%">
-                <div class="col ">
-                    <span class="col " id="days"></span>
-                    Dias
+    <div class="col-12 convite">
+
+
+        <div><!--Nome Noivos-->
+            <img class="nomes" src="src/img/nomesTrasparente.PNG" width="50%" alt="nomes noivos">
+        </div>
+        <img class="floralname" src="src/img/flor5Meio.png" width="100%" alt="">
+
+
+
+        <div id="home"> <!--Time-->
+
+            <!-- TEMPO-->
+            <section id="countdown" class="full-screen" width="100%">
+                <h3>Contagem Regressiva para o Casamento</h3> <br>
+                <div class="col tempo " id="timer" width="100%">
+                    <div class="col ">
+                        <span class="col " id="days"></span>
+                        Dias
+                    </div>
+                    <div>
+                        <span class="col " id="hours"></span>
+                        Horas
+                    </div>
+                    <div>
+                        <span class="col " id="minutes"></span>
+                        Minutos
+                    </div>
+                    <div>
+                        <span class="col " id="seconds"></span>
+                        Segundos
+                    </div>
                 </div>
-                <div>
-                    <span class="col " id="hours"></span>
-                    Horas
-                </div>
-                <div>
-                    <span class="col " id="minutes"></span>
-                    Minutos
-                </div>
-                <div>
-                    <span class="col " id="seconds"></span>
-                    Segundos
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- divisoria --------------------------------------------------------------------
-        fraseConvidados, dataCasamento,enderecoCasamento
-        -->
-        <div class="row divisoria"></div>
+        <section class="col-12"> <!--Convite-->
 
-
-        <img class=" img fraseConvidados" src="src/img/fraseConvidados.PNG" width="100%" alt="">
-        <!-- <p>“E sabemos que todas as coisas<br> contribuem juntamente para o bem <br>
-                daqueles que amam a Deus”<br>
-                Romanos 8:28</p>-->
-
-        <div class="row divisoria"></div>
-
-        <div class="row">
-
-            <img class="img dataCasamento" src="src/img/dataCasamento.PNG" width="100%" alt="">
-
-            <!-- divisoria ---------------------------------------------------------------------->
+            <!-- divisoria -->
             <div class="row divisoria"></div>
 
-            <img class=" img enderecoCasamento" src="src/img/endereçoCasamento.PNG" width="100%" alt="">
+            <!-- Frase-->
+            <img class=" img fraseConvidados" src="src/img/fraseConvidados.PNG" width="100%" alt="">
 
-        </div>
+            <!-- divisoria -->
+            <div class="row divisoria"></div>
 
-        <div class="row divisoria"></div>
-        <!--- menu -->
-        <div class="row">
-            <div class="menus col-12 ">
-                <div class="menu col "><!--class="iconelista" -->
-                    <a href="listaPresentes.html"> <img src="src/img/iconessLista.png" width="54%" alt=""></a>
-                </div>
-                <div class="menu col "><!--class="iconePresenca" -->
-                    <a href="confirmarpresenca.html"> <img src="src/img/iconessConfirme2.png" width="55%" alt=""></a>
-                </div>
-                <div class="menu col "><!--lass="iconessLocalizacao" -->
-                    <a href="localizacao.html"> <img c src="src/img/iconessLocalizacao.png" width="55%" alt=""></a>
+            <!-- Salve Date -->
+
+            <div class="row">
+                <!-- Data casamento -->
+                <img class="img dataCasamento" src="src/img/dataCasamento.PNG" width="100%" alt="">
+
+                <!-- divisoria -->
+                <div class="row divisoria"></div>
+
+                <!-- Endereço -->
+                <img class=" img enderecoCasamento" src="src/img/endereçoCasamento.PNG" width="100%" alt="">
+            </div>
+            <!-- divisoria -->
+            <div class="row divisoria"></div>
+
+            <div class="col-12 ">
+
+                <!--- menu -->
+                <div class="row">
+                    <div class="menus col-12 ">
+                        <div class="menu col "><!--class="iconelista" -->
+                            <a href="listaPresentes.html"> <img src="src/img/iconessLista.png" width="52px" alt=""></a>
+                        </div>
+                        <div class="menu col "><!--class="iconePresenca" -->
+                            <a href="confirmarpresenca.html"> <img src="src/img/iconessConfirme2.png" width="55%"
+                                    alt=""></a>
+                        </div>
+                        <div class="menu col "><!--lass="iconessLocalizacao" -->
+                            <a href="localizacao.html"> <img c src="src/img/iconessLocalizacao.png" width="55%"
+                                    alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!--- Section Fotos -->
+            <br>
+            <img class="floralname" src="src/img/flor5Meio.png" width="100%" alt="">
 
+        </section>
 
-        <div class="row divisoria"></div>
+    </div>
 
+    <div id="about">
+        <div class="row col-12">
+            <div class="col-12 col-12">
 
+                <h1>Nossa História</h1>
+                <p class="nossaHistoria">
 
-        <div class="footer col-12">
-            <div class="col-12">
+                    Em uma tarde comum, nossos caminhos se cruzaram de forma inesperada. O que começou como uma simples
+                    conversa
+                    logo se transformou em algo muito maior do que poderíamos imaginar. Em poucos meses, descobrimos que
+                    o
+                    que
+                    sentíamos um pelo outro era algo raro e especial. <br><br>
 
-                <a href="index.html"><img class="florCentro" src="src/img/floresmeio2.PNG" height="100%" alt=""></a>
-                <br><br>
+                    Cada momento juntos foi como se o tempo parasse, enquanto curava as nossas feridas mais profundas.
+                    Foi
+                    nesse
+                    curto espaço de tempo que percebemos que tínhamos encontrado algo único – uma conexão verdadeira,
+                    repleta de
+                    amor, compreensão e sonhos compartilhados. <br><br>
+
+                    Hoje, estamos prontos para dar o próximo passo em nossa jornada juntos. E mal podemos esperar para
+                    celebrar
+                    esse amor com todos aqueles que fazem parte das nossas vidas. <br><br>
+
+                    Obrigado por fazerem parte da nossa história. Estamos ansiosos para escrever os próximos capítulos
+                    ao
+                    lado
+                    de vocês. <br><br>
+
+                    Com amor, <br><br>
+
+                    <img class="zoom-img" src="src/img/icone.PNG" alt="Flor Esquerda">
+                </p>
             </div>
-            <p>
-                <span>
-                    <a href="https://api.whatsapp.com/send?phone=5511930561783"><b>WhatsApp da Noiva</b></a>
-                    &nbsp; &nbsp;e&nbsp;&nbsp;
-                    <a href="https://api.whatsapp.com/send?phone=5511989104635">
-                        <b>WhatsApp do Noivo</b></a>
-                </span>
-                <br><br>
+        </div>
+        <br><br>
+        <img class="zoom-img" src="src/img/flor5MeioDir.png" alt="Flor Esquerda">
+        <br><br>
+   
+        <div class="video col-12" width="100%">
+            <div class="row col-12">
+                <div class="col-12 col-12">
+                    <h1>Save The Date</h1>
+                </div>
+            </div>
 
+            <video width="100%" height="auto" autoplay controls loop>
+                <source src="/src/media/Cópia de som vogais.mp4" type="video/mp4">
+                Seu BroYour browser does not support the video tag.
+            </video>
+        </div>
+        <br><br>
+    </div>
+
+    <section class="fotos">
+
+    </section>
+
+    <div class=" col-12">
+
+        <div class="listapresentes" id="presente">
+            <h1>Opções de Presentes</h1>
+
+            <div class="home col-12">
+
+                <img class="frasePresentes" src="src/img/frase 2.PNG" width="200%" alt="">
+                <br><br>
+                <!-- 
+            <p>“Queridos convidados...
+            Sintam-se a vontade para nos presentear com o que sentir, podendo tambem, ser um item da lista, ou algum valor.
+            Saiba que sua presença já será o nosso maior presente!  
             </p>
-            <br><br>
+            -->
+
+                <div class="row">
+                    <a href="https://www.mercadolivre.com.br/presentes/presentes-de-casamento-oc8ty"><img
+                            class="img dataCasamento" src="src/img/tela2botao1.PNG" width="100%" alt=""></a>
+                            <br><br>                    <br><br>
+                            <img class="pixcode" src="src/img/qrLPresente.PNG" width="50%" alt="">
+                </div>
+                <br><br>
+                <div class="row divisoria">                <img class="divisorias2" src="/src/img/agenda/divisoria.PNG" alt="">
+                </div>
+
+                <div class="row">
+                    <img class="dataCasamento" src="src/img/tela2botao2.PNG" width="50%" alt="">
+                    <br><br>                    <br><br>
+
+                    <img class="pixcode" src="src/img/pixcode2.PNG" width="50%" alt="">
+                    <br>
+                </div>
+                <div class="row divisoria"></div>
+                <br><br>
+
+
+
+
+                <!--- MELI Presente opicional-->
+                <div class="frameMeli">
+                    <div class="fixada col-9">
+                        <a href="indexHomeConvidado.html"></a>
+                    </div>
+                    <div class="fixada col-4">
+                        <div class="row divisoria"></div>
+
+                        <img class="nomes col" width="150px" src="src/img/nossaLista.PNG" alt="">
+
+                        <img class="flormeiomenor" src="/src/img/flor5MeioDir.png" alt="">
+                    </div>
+                    <!--Mercado livre-->
+                    <iframe src="https://www.mercadolivre.com.br/presentes/presentes-de-casamento-oc8ty" border="0"
+                        sroll="none" width="100%" height="800px" name="Lista de Presentes"></iframe>
+
+                    <div class="fixadaFundo col-4">
+                        <div class="row">
+                            <img class="dataCasamento" src="src/img/obrigado.PNG" width="60%" alt=""></a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <img class="floralname" src="src/img/flor5Meio.png" width="100%" alt="">
+        </div>
+        <!--Time Line-->
+        <div class="row containertimeline">
+            <br><br><br>
+            <br><br><br>
+
+            <div class="row">
+
+                <img class="floralname" src="/src/img/agenda/agenda horarios.PNG" alt="">
+
+                <img class="divisorias2" src="/src/img/agenda/divisoria.PNG" alt="">
+
+            </div>
+
+            <!-- Section: Timeline -->
+            <div class="timeline">
+                <div class="agenda left">
+                    <div class="content">
+                        <div class="img-agenda cerimonia">
+                            <img src="/src/img/agenda/1-cerimônia.PNG" alt="Cerimonia">
+                        </div>
+                    </div>
+                </div>
+                <div class="agenda right ">
+                    <div class="content">
+                        <div class="img-agenda brinde">
+                            <img src="/src/img/agenda/2-brinde.PNG" alt="brinde">
+                        </div>
+                    </div>
+                </div>
+                <div class="agenda left ">
+                    <div class="content">
+                        <div class="img-agenda fotos">
+                            <img src="/src/img/agenda/3-fotos.PNG" alt="fotos">
+                        </div>
+                    </div>
+                </div>
+                <div class="agenda right">
+                    <div class="content">
+                        <div class="img-agenda almoco">
+                            <img src="/src/img/agenda/4-almoço.PNG" alt="almoco">
+                        </div>
+                    </div>
+                </div>
+                <div class="agenda left">
+                    <div class="content">
+                        <div class="img-agenda festa">
+                            <img src="/src/img/agenda/5-festa.PNG" alt="festa">
+                        </div>
+                    </div>
+                </div>
+                <div class="agenda right">
+                    <div class="content">
+                        <div class="img-agenda bolo">
+                            <img src="/src/img/agenda/6-bolo.PNG" alt="bolo">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
 
-        <script>
+        <!--Confirmar Presença-->
+        <div id="contact">
+            <p>Detalhes de contato.</p>
+            <img class="flor5MeioDir" src="src/img/flor5MeioDir.png" alt="">
 
-            const countdownDate = new Date("Nov 3, 2024 00:00:00").getTime();
-            const timerElements = {
-                days: document.getElementById("days"),
-                hours: document.getElementById("hours"),
-                minutes: document.getElementById("minutes"),
-                seconds: document.getElementById("seconds")
-            };
+            <img class="dataCasamento" src="/src/img/confirmarPresenca.PNG" width="100%" alt="">
 
-            function updateCountdown() {
-                const now = new Date().getTime();
-                const distance = countdownDate - now;
+            <div class="col-12 col-s-12">
 
-                if (distance < 0) {
-                    clearInterval(countdownInterval);
-                    document.getElementById("countdown").innerHTML = "O casamento já aconteceu!";
-                    return;
-                }
+                <form class="col-12" id="wedding-form"
+                    action="https://script.google.com/macros/s/AKfycbxSgOGkWd4KnGSuqyko4VvREvqGlJZWNdH9AhohmvSoIAbdoN5szTGdBum7L4sMjvwf/exec"
+                    method="POST" onsubmit="return handleFormSubmit(event)">
+                    <div class="col-12 col-s-12">
+                        <label class="asideform col-12" for="nome">
+                            <h5>Qual é o seu nome?*</h5>
+                            <input class="asideform col-12" type="text" id="nome" name="nome" required>
+                        </label>
 
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        <label class="asideform col-12">
+                            <h5>Você é convidado do Noivo ou da Noiva?*</h5>
+                            <div class="asideformradio col-12">
+                                <input class="" type="radio" id="noivo" name="side" value="Noivo" required>
+                                <label class="asideform" for="noivo">Noivo</label>
+                                <input class="" type="radio" id="noiva" name="side" value="Noiva">
+                                <label class="asideform" for="noiva">Noiva</label>
+                            </div>
+                        </label>
 
-                timerElements.days.textContent = days;
-                timerElements.hours.textContent = hours;
-                timerElements.minutes.textContent = minutes;
-                timerElements.seconds.textContent = seconds;
-            }
+                        <label class="asideform col-12">
+                            <h5>Poderá comparecer?*</h5>
+                            <div class="asideformradio col-12">
+                                <label class="asideform col-12" for="sim">
+                                    <input class="asideform " type="radio" id="sim" name="attendance" value="Sim, irei"
+                                        required> Sim, irei
+                                </label><br>
+                                <label class="asideform col-12" for="nao">
+                                    <input class="asideform " type="radio" id="nao" name="attendance" value="Não">
+                                    Não
+                                </label><br>
+                                <label class="asideform col-12" for="confirmoDepois">
+                                    <input class="asideform " type="radio" id="confirmoDepois" name="attendance"
+                                        value="Confirmo depois"> Confirmo depois
+                                </label>
+                            </div>
+                        </label>
 
-            const countdownInterval = setInterval(updateCountdown, 1000);
+                        <div class="asideform col-12">
+                            <label class="asideform col-12" for="message">
+                                <h5>Envie uma mensagem aos Noivos</h5>
+                            </label>
+                            <textarea class="asideform col-12" id="message" name="message" rows="4"
+                                cols="50"></textarea>
+                        </div>
 
-        </script>
+                        <button class="button col-12" type="submit">Enviar</button>
 
-        <!--JavaScript para Envio de Dados (Frontend)-->
-        <script>
-            document.getElementById("wedding-form").addEventListener("submit", function (event) {
-                event.preventDefault();
+                    </div>
+                </form>
 
-                var formData = new FormData(event.target);
-                var formObject = {};
-                formData.forEach((value, key) => formObject[key] = value);
+                <!-- ver dados cadastrados-->
+                <p class="col-12" id="form-status"></p>
+                <div class="col-12">
+                    <!-- <div class="row">
+            
+                            <button class="button col-6" id="load-data" progress>Carregar Dados</button>
+            
+                        </div>-->
+                    <table class="col-12" id="data-table">
+                        <thead>
+                            <tr>
+                                <!-- Cabeçalhos da tabela serão inseridos aqui -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Linhas de dados serão inseridas aqui -->
+                        </tbody>
+                    </table>
+                </div>
 
-                var scriptURL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec'; // Substitua pelo ID do seu script
-                fetch(scriptURL, { method: 'POST', body: JSON.stringify(formObject) })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.result === 'success') {
-                            alert("Dados enviados com sucesso!");
-                        } else {
-                            alert("Erro ao enviar dados. Tente novamente.");
-                        }
-                    })
-                    .catch(error => console.error('Error!', error.message));
-            });
-        </script>
+
+            </div>
+
+            <!-- TEMPO-->
+            <section>
+                <img class="flor5MeioDir" src="src/img/flor5MeioDir.png" alt="">
+
+            </section>
+
+            <br><br><br>
+
+
+        </div>
+
+        <div class="row left">
+            <img class="flor5MeioEsq col-1" src="src/img/flor5MeioEsq.png" width="100%" alt="">
+        </div>
+        <!-- Localização Maps-->
+
+        <div class="row">
+
+            <!--Titulo Localizacao-->
+
+            <a href="index.html"><img class="nomes" src="src/img/localizacaoFonte.PNG" width="80%" alt=""></a>
+            <img class="florCentro" src="src/img/flor5Meiomenor.png" alt="">
+
+
+            <!--Local-->
+            <div class="row">
+                <img class="enderecoCasamento" src="src/img/endereçoCasamento.PNG" width="100%" alt="">
+
+                <div class="col-6 local">
+                    <img class="localização" src="src/img/localização.jpg" width="100%" alt="">
+                </div>
+                <div class="col-6 maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.556169347731!2d-46.93801422509664!3d-23.573324078791654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf06fc51ad158d%3A0x833e3f3b1f5e524e!2sMapri%20Eventos!5e1!3m2!1spt-BR!2sbr!4v1722538430608!5m2!1spt-BR!2sbr"
+                        width="100%" height="300px" style="border:0;padding:0; margin: 0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer> <!-- Footer -->
+            <div class="footer col-12">
+                <div class="col-12">
+
+                    <a href="index.html"><img class="florCentro" src="src/img/flor5Meio.png" width="100%" alt=""></a>
+                    <br><br>
+                </div>
+                <img class="zoom-img" src="src/img/icone.PNG" alt="Flor Esquerda">
+
+
+                <div class="col-12">
+
+                    <p>
+                        <span>
+                            <a href="https://api.whatsapp.com/send?phone=5511930561783"><b>WhatsApp da Noiva</b></a>
+                            &nbsp; &nbsp;e&nbsp;&nbsp;
+                            <a href="https://api.whatsapp.com/send?phone=5511989104635">
+                                <b>WhatsApp do Noivo</b></a>
+                        </span>
+                        <br><br>
+
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="/src/js/time.js"></script>
+        <script src="/src/js/musica.js"></script>
+        <script src="/src/js/formPos.js"></script>
+        <script src="/src/js/formGet.js"></script>
 </body>
 
 </html>
