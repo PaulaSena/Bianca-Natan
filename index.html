@@ -58,7 +58,7 @@
             <img class="iconNb" src="src/img/icone.PNG" alt="bn">
             <a href="#about">Sobre</a>
             <a href="#presente">Lista de Presentes</a>
-            <a href="#contact">Contato</a>
+            <a href="#contact">Presença</a>
 
         </div>
     </div>
@@ -66,11 +66,11 @@
 
         <div id="animated_div" id="music-controls">
             <!-- <i class="animated_div"><img class="som" src="src/img/cd_music_love_song.svg" width="30px"></i> <button id="play-button">Play</button>-->
-            <audio controls id="audio-player autoplay">
+            <audio controls id="audio-player autoplay loop">
                 <!-- Adicione as músicas aqui -->
-                <source src="src/media/2.mp3" type="audio/mpeg">
-                <source src="src/media/1.mp3" type="audio/mpeg">
-                <source src="src/media/3.mp3" type="audio/mpeg">
+                <source src="src/media/1.mp3" type="audio/mp3">
+                <source src="src/media/2.mp3" type="audio/mp3">
+                <source src="src/media/3.mp3" type="audio/mp3">
                 Seu navegador não suporta o elemento de áudio.
             </audio>
 
@@ -81,10 +81,13 @@
     </div> <!--Controles de áudio -->
 
     <div class="row col-12">
-        <div class="col-6 leftflor5MeioEsq">
+        <div class="row left">
+            <img class="flor5MeioEsq col-1" src="src/img/flor5MeioEsq.png" width="100%" alt="">
+        </div>
+        <!--<div class="col-6 leftflor5MeioEsq">
             <img class="zoom-img" src="src/img/flor5MeioEsq.png" alt="Flor Esquerda">
         </div>
-        <!--  <div class="col-4 meio">
+          <div class="col-4 meio">
             <img class="zoom-img" src="src/img/flor5Meio.png" alt="Flor Meio">
         </div>
         <div class="col-4 right">
@@ -98,8 +101,10 @@
 
 
         <div><!--Nome Noivos-->
-            <img class="nomes" src="src/img/nomesTrasparente.PNG" width="50%" alt="nomes noivos">
+            <img class="nomes" src="src/img/nomesTrasparente.PNG" width="80%" alt="nomes noivos">
         </div>
+
+
         <img class="floralname" src="src/img/flor5Meio.png" width="100%" alt="">
 
 
@@ -161,15 +166,15 @@
                 <!--- menu -->
                 <div class="row">
                     <div class="menus col-12 ">
-                        <div class="menu col "><!--class="iconelista" -->
-                            <a href="listaPresentes.html"> <img src="src/img/iconessLista.png" width="52px" alt=""></a>
+                        <div class="menu col "><!--class="iconelistaPresente" -->
+                            <a href="#presente"> <img src="src/img/iconessLista.png" width="52px" alt=""></a>
                         </div>
                         <div class="menu col "><!--class="iconePresenca" -->
-                            <a href="confirmarpresenca.html"> <img src="src/img/iconessConfirme2.png" width="55%"
+                            <a href="#contac"> <img src="src/img/iconessConfirme2.png" width="55%"
                                     alt=""></a>
                         </div>
                         <div class="menu col "><!--lass="iconessLocalizacao" -->
-                            <a href="localizacao.html"> <img c src="src/img/iconessLocalizacao.png" width="55%"
+                            <a href="#local"> <img c src="src/img/iconessLocalizacao.png" width="55%"
                                     alt=""></a>
                         </div>
                     </div>
@@ -230,7 +235,9 @@
                 </div>
             </div>
 
-            <video width="100%" height="auto" autoplay controls loop>
+            <video width="100%" height="auto" controls loop>
+                <!--<video width="100%" height="auto" autoplay controls loop>  AUTOPLAY  --> 
+
                 <source src="src/media/Cópia de som vogais.mp4" type="video/mp4">
                 Seu BroYour browser does not support the video tag.
             </video>
@@ -312,7 +319,6 @@
         <!--Time Line-->
         <div class="row containertimeline">
             <br><br><br>
-            <br><br><br>
 
             <div class="row">
 
@@ -373,7 +379,6 @@
 
         <!--Confirmar Presença-->
         <div id="contact">
-            <p>Detalhes de contato.</p>
             <img class="flor5MeioDir" src="src/img/flor5MeioDir.png" alt="">
 
             <img class="dataCasamento" src="src/img/confirmarPresenca.PNG" width="100%" alt="">
@@ -466,10 +471,9 @@
 
         <div class="row left">
             <img class="flor5MeioEsq col-1" src="src/img/flor5MeioEsq.png" width="100%" alt="">
-        </div>
         <!-- Localização Maps-->
 
-        <div class="row">
+        <div id="local" class="row">
 
             <!--Titulo Localizacao-->
 
@@ -492,7 +496,7 @@
                 </div>
             </div>
         </div>
-
+</div>
         <footer> <!-- Footer -->
             <div class="footer col-12">
                 <div class="col-12">
