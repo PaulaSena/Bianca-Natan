@@ -6,7 +6,7 @@ html {
   padding: 0;
   border: 0;
   margin: 0;
-  background-image: url('src/img/Backgroud-1.png');
+  background-image: url('/src/img/Backgroud-1.png');
   background-repeat: no-repeat;
   /* font-size: 1.4rem;*/
   font-size: calc(1vw + 1vh + 0.5vmin);
@@ -26,7 +26,7 @@ body {
   padding: 0;
   font-size: 1rem;
   /* Tamanho da fonte será baseado no valor calculado no <html> */
-  background-image: url('src/img/Backgroud-1.png'); /* Caminho para a imagem */
+  background-image: url('/src/img/Backgroud-1.png'); /* Caminho para a imagem */
             background-size: cover; /* Faz a imagem cobrir todo o fundo */
             background-repeat: no-repeat; /* Impede que a imagem se repita */
             background-position: center; /* Centraliza a imagem */
