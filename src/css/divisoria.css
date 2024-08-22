@@ -71,7 +71,7 @@ div.divisoria {
 
 .flor5MeioEsq {
   /* padding: 50px; */
-  /* padding-left: 180px; */
+padding-left: 0;
   padding-right: 0;
   float: left;
   margin: 0;
@@ -80,4 +80,9 @@ div.divisoria {
   padding-top: 0;
   padding-bottom: 0;
   width: 60%;
+}
+img.floralname1 {
+  padding: 28%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
