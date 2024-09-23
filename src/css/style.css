@@ -12,7 +12,7 @@ html {
   font-size: calc(1vw + 1vh + 0.5vmin);
   /* Ajusta a base da fonte de acordo com a largura da viewport */
 
-  font-family: 'Belleza', sans-serif;
+  /* font-family: 'Belleza', sans-serif;*/
   color: #56555b;
 }
 
