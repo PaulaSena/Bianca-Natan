@@ -396,6 +396,10 @@ h3 {
   margin-left: 0;
 }
 
+#ListaPresente{
+  background-image: url('/src/img/Backgroud-1.png');
+  background-repeat: no-repeat;
+}
 
 .frasePresentes {
   width: 100%;
