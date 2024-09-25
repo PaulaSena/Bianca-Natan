@@ -1,3 +1,11 @@
+table#data-table {
+    font-size: xx-small;
+}
+      
+td{
+    font-size: x-small;
+}
+      
       /* For mobile phones: */
       [class*="col-"] {
         width: 100%;
